@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Название:</strong>
+  <%= @article.name %>
+</p>
+
+<p>
+  <strong>Тест:</strong>
+  <%= @article.body %>
+</p>
+
+<%= link_to 'Изменить', edit_article_path(@article) %> |
+<%= link_to 'Назад', articles_path %>
